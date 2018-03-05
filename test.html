@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>test</title>
+	<script type="text/javascript" src="./jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="./hamburger.js"></script>
+	<link rel="stylesheet" type="text/css" href="./custom-test.css">
+	<link rel="stylesheet" type="text/css" href="./hamburger.css">
+</head>
+<body>
+	<header>
+		<nav class="menu">
+			<ul class="ul-custom-test">
+				<li><a href="#">
+					<span class="nav-icon"></span>
+					<span>Option</span></a>
+				</li>
+				<li><a href="#">
+					<span class="nav-icon"></span>
+					<span>State</span></a>
+				</li>
+				<li><a href="#">
+					<span class="nav-icon"></span>
+					<span>Performence</span></a>
+				</li>
+				<li><a href="#">
+					<span class="nav-icon"></span>
+					<span>Slide Bar</span></a>
+				</li>
+				<li><a href="#">
+					<span class="nav-icon"></span>
+					<span>Load more</span></a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<div class="overlay"></div>
+	<div class="test-body"></div>
+	<script type="text/javascript">
+		$(".menu").burger(".menu","click");
+	</script>
+</body>
+</html>

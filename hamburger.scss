@@ -1,0 +1,48 @@
+.burger-container{
+	z-index: 5;
+	position: relative;
+	a {
+		box-sizing: border-box;
+		text-decoration: none;
+		display: block;
+		cursor: pointer;
+	}
+	.active {
+		transition: height .2s ease;
+	}
+	ul {
+		position: absolute;
+		margin: 0;
+		padding: 0;
+		overflow-y: hidden;
+		z-index: 5;
+		list-style: none;
+		transition: height .2s ease;
+		width: auto;
+		height: 0;
+			li {
+				display: block;
+				a {
+					box-sizing: border-box;
+					text-decoration: none;
+					display: block;
+					cursor: pointer;
+				}
+			}
+	}
+}
+.overlay {
+	background-color:black;
+	opacity: .5;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: none;
+} 
+
+.overlay-active {
+	display: block;
+}
+
