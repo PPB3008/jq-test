@@ -1,16 +1,13 @@
 .burger-container {
   z-index: 5;
-  position: relative;
-}
+  position: relative; }
 .burger-container a {
   box-sizing: border-box;
   text-decoration: none;
   display: block;
-  cursor: pointer;
-}
+  cursor: pointer; }
 .burger-container .active {
-  transition: height .2s ease;
-}
+  transition: height .2s ease; }
 .burger-container ul {
   position: absolute;
   margin: 0;
@@ -19,18 +16,16 @@
   z-index: 5;
   list-style: none;
   transition: height .2s ease;
-  width: auto;
-  height: 0;
-}
+  height: 0; }
 .burger-container ul li {
-  display: block;
-}
+  width: auto;
+  display: block; }
 .burger-container ul li a {
+  width: 100%;
   box-sizing: border-box;
   text-decoration: none;
   display: block;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .overlay {
   background-color: black;
@@ -40,11 +35,17 @@
   bottom: 0;
   left: 0;
   right: 0;
-  display: none;
-}
+  display: none; }
 
 .overlay-active {
-  display: block;
-}
+  display: block; }
+
+.body-overlay {
+  overflow: hidden; }
+
+@media (max-width: 768px) {
+  .burger-container ul {
+    width: 100%;
+    left: 0; } }
 
 /*# sourceMappingURL=hamburger.css.map */

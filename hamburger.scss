@@ -1,4 +1,4 @@
-.burger-container{
+.burger-container {
 	z-index: 5;
 	position: relative;
 	a {
@@ -18,17 +18,19 @@
 		z-index: 5;
 		list-style: none;
 		transition: height .2s ease;
-		width: auto;
+		// width: 100%;
 		height: 0;
-			li {
+		li {
+			width: auto;
+			display: block;
+			a {
+				width: 100%;
+				box-sizing: border-box;
+				text-decoration: none;
 				display: block;
-				a {
-					box-sizing: border-box;
-					text-decoration: none;
-					display: block;
-					cursor: pointer;
-				}
+				cursor: pointer;
 			}
+		}
 	}
 }
 .overlay {
@@ -40,9 +42,22 @@
 	left: 0;
 	right: 0;
 	display: none;
-} 
+}
 
 .overlay-active {
 	display: block;
+}
+
+.body-overlay {
+	overflow: hidden;
+}
+
+
+
+@media (max-width:768px) {
+	.burger-container ul {
+		width: 100%;
+		left:0;
+	}
 }
 
