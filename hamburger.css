@@ -1,31 +1,31 @@
 .burger-container {
   z-index: 5;
   position: relative; }
-.burger-container a {
-  box-sizing: border-box;
-  text-decoration: none;
-  display: block;
-  cursor: pointer; }
-.burger-container .active {
-  transition: height .2s ease; }
-.burger-container ul {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  overflow-y: hidden;
-  z-index: 5;
-  list-style: none;
-  transition: height .2s ease;
-  height: 0; }
-.burger-container ul li {
-  width: auto;
-  display: block; }
-.burger-container ul li a {
-  width: 100%;
-  box-sizing: border-box;
-  text-decoration: none;
-  display: block;
-  cursor: pointer; }
+  .burger-container a {
+    box-sizing: border-box;
+    text-decoration: none;
+    display: block;
+    cursor: pointer; }
+  .burger-container .active {
+    transition: height .2s ease; }
+  .burger-container ul {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    z-index: 5;
+    list-style: none;
+    transition: height .2s ease;
+    height: 0; }
+    .burger-container ul li {
+      width: auto;
+      display: block; }
+      .burger-container ul li a {
+        width: 100%;
+        box-sizing: border-box;
+        text-decoration: none;
+        display: block;
+        cursor: pointer; }
 
 .overlay {
   background-color: black;

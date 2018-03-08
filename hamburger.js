@@ -26,13 +26,17 @@
 				},
 				add:function(){
 					let aDoc=document.createElement("a");
-					let ulDoc=document.querySelector("."+this.doc.className+" ul");
+					for(let x in this.doc.childNodes){
+						if(this.doc.childNodes[x].nodeName=="UL"){
+							let ulDoc=this.doc.childNodes[x];
+						}
+					}
 					aDoc.innerHTML=this.aText;
 					this.doc.insertBefore(aDoc,ulDoc);
 					return this.render(ulDoc,aDoc);
 				},
 				render:function(ulDoc,aDoc){
-					let liDoc=document.querySelectorAll("."+this.doc.className+" li");
+					let liDoc=ulDoc.childNodes;
 					let top=this.ulTop(ulDoc);
 					this.doc.className+=" burger-container";
 					for(let y in liDoc){
@@ -42,7 +46,6 @@
 					}	
 					window.onresize=()=>{
 						this.state && this.overlayJudege(top,ulDoc);
-						
 					}
 					return this.addActive(top,ulDoc,aDoc);
 				},
